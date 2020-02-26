@@ -17,6 +17,7 @@
    curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
     chmod +x ./kubectl
     sudo mv ./kubectl /usr/local/bin/kubectl
+    sudo mv /usr/local/bin/kubectl /bin/
    ```
 1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
 1. Attach IAM role to ubuntu server
